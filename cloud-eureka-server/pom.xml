@@ -7,9 +7,10 @@
 	<version>1.0.0</version>
 	<name>cloud-eureka-server</name>
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.3.5.RELEASE</version>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-parent</artifactId>
+		<version>Brixton.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<dependencyManagement>
 		<dependencies>

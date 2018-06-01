@@ -24,12 +24,16 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="cloud-config-server" />
+        <module name="cloud-eureka-server" />
         <module name="cloud-simple-helloword" />
+        <module name="cloud-simple-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cloud-config-server" target="1.7" />
+      <module name="cloud-eureka-server" target="1.7" />
       <module name="cloud-simple-helloword" target="1.6" />
+      <module name="cloud-simple-service" target="1.7" />
       <module name="spring_cloud" target="1.6" />
     </bytecodeTargetLevel>
   </component>

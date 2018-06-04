@@ -1,87 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2735fb9-09c3-49b5-a354-2057f8b6b76a" name="Default" comment="ui">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/favicon1.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/images/exist.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/images/getCaptcha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/images/headphoto.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/images/l-o-g-o.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/images/lg-user.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/images/lg_lock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/images/login-BG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/images/return.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/images/top_bar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-hystrix-turbine/cloud-hystrix-turbine.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/cloud-simple-ui.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/css/home.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/js/home.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/js/jquery-1.10.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/js/page.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/js/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/templates/denied.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/templates/expired.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/templates/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/templates/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-zuul/cloud-simple-zuul.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-simple-zuul/src/main/resources/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-thrift-client/cloud-thrift-client.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../cloud-thrift-interface/cloud-thrift-interface.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_feign_feign_core_8_16_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_feign_feign_hystrix_8_16_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_feign_feign_slf4j_8_16_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_javanica_1_5_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_metrics_event_stream_1_5_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_zuul_zuul_core_1_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_3_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_animal_sniffer_annotation_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_feign_1_1_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_hystrix_1_1_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_zuul_1_1_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/bootstrap.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cloud-simple-ui/src/main/resources/static/user-page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../cloud-simple-zuul/resources/application.yml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cloud-simple-service/src/main/resources/bootstrap.properties" afterPath="$PROJECT_DIR$/../cloud-simple-service/src/main/resources/bootstrap.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cloud-simple-ui/pom.xml" afterPath="$PROJECT_DIR$/../cloud-simple-ui/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cloud-simple-ui/src/main/java/cloud/simple/service/UserService.java" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/java/cloud/simple/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cloud-simple-ui/src/main/java/cloud/simple/web/UserController.java" afterPath="$PROJECT_DIR$/../cloud-simple-ui/src/main/java/cloud/simple/web/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cloud-simple-zuul/pom.xml" afterPath="$PROJECT_DIR$/../cloud-simple-zuul/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../cloud-simple-zuul/src/main/java/cloud/simple/zuul/ZuulApplication.java" afterPath="$PROJECT_DIR$/../cloud-simple-zuul/src/main/java/cloud/simple/zuul/ZuulApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="d2735fb9-09c3-49b5-a354-2057f8b6b76a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../cloud-simple-service/src/main/java/cloud/simple/service/StartController.java" afterPath="$PROJECT_DIR$/../cloud-simple-service/src/main/java/cloud/simple/service/ServiceApplication.java" />
     </list>
     <ignored path="spring_cloud.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -697,7 +618,7 @@
       <updated>1527831588768</updated>
       <workItem from="1527831590002" duration="2792000" />
       <workItem from="1527835751818" duration="1569000" />
-      <workItem from="1527837328512" duration="18215000" />
+      <workItem from="1527837328512" duration="18235000" />
     </task>
     <task id="LOCAL-00001" summary="数据库地址">
       <created>1527837744289</created>
@@ -705,11 +626,17 @@
       <option name="project" value="LOCAL" />
       <updated>1527837744289</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ui">
+      <created>1528102395277</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1528102395277</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22576000" />
+    <option name="totallyTimeSpent" value="22596000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -759,6 +686,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="数据库地址" />
     <MESSAGE value="ui" />
     <option name="LAST_COMMIT_MESSAGE" value="ui" />

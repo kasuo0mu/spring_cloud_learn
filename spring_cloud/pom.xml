@@ -22,11 +22,15 @@
     </parent>
 
     <modules>
-        <module>../cloud-simple-helloword</module>
+        <!--<module>../cloud-simple-helloword</module>-->
         <module>../cloud-config-server</module>
         <module>../cloud-eureka-server</module>
+        <!--<module>../cloud-hystrix-turbine</module>-->
         <module>../cloud-simple-service</module>
-        <!--<module>../cloud-config-repo</module>-->
+        <module>../cloud-simple-ui</module>
+        <module>../cloud-simple-zuul</module>
+        <!--<module>../cloud-thrift-client</module>-->
+        <!--<module>../cloud-thrift-interface</module>-->
     </modules>
 
 </project>

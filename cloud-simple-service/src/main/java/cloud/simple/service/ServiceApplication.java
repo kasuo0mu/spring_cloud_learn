@@ -2,13 +2,13 @@ package cloud.simple.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.stereotype.Controller;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-@Controller
+@EnableDiscoveryClient
 @SpringBootApplication
-public class StartController {
+public class ServiceApplication {
 	public static void main(String[] args) throws Exception {
-		SpringApplication.run(StartController.class, args);
+		SpringApplication.run(ServiceApplication.class, args);
 	}
 
 }

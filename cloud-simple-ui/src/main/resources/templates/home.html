@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml" xmlns:min-width="http://www.w3.org/1999/xhtml">
+<head>
+    <title>home</title>
+    <link rel="icon" type="image/x-icon" href="favicon1.ico"/>
+    <link rel="stylesheet" href="css/home.css"/>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"
+            th:href="@{/js/jquery.js}"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"
+            th:href="@{/js/bootstrap.js}"></script>
+    <script type="text/javascript" src="js/home.js" th:href="@{/js/home.js}"></script>
+    <script type="text/javascript" src="js/test.js" th:href="@{/js/test.js}"></script>
+</head>
+<body>
+<div class="home_header">
+    <input type="hidden" id="token" th:value="${token}"/>
+    <div class="home_headertxt">
+        数字建造平台
+    </div>
+    <div style="padding-top: 22px; padding-left: 75%; width: 300px">
+        <img style="float: left" src="../images/headphoto.png"/>
+        <div class="home_toprighttxt1">
+            欢迎您：<span th:text="${userName}">zhangtz</span>
+        </div>
+        <form th:action="@{/logout}" method="post">
+            <div style="cursor: pointer" id="logout">
+                <img style="float: left; margin-left: 40px" src="../images/exist.png"/>
+                    <span class="home_toprighttxt2">退出</span>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="home_main">
+    <table style="width: 100%; box-shadow: 0 1px 2px 0 #e6e8f0; border-spacing: 0" border="0">
+        <tr style="height: 30px">
+            <td width='10%'>
+                &nbsp;
+            </td>
+            <td width='65%' style="padding-top: 20px; padding-bottom: 14px; color: #333333; font-weight: bold">
+                我的待办事项
+            </td>
+            <td width='15%' style="padding-left: 20px; color: #333333; font-weight: bold">
+                专业系统
+            </td>
+            <td width='10%' style="background-color: #e0e7f1">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <!--代办信息-->
+            <td style="height: 500px; background-color: #ffffff" valign="top">
+                <table id="table" style="width: 100%;">
+                </table>
+            </td>
+            <!--系统连接开始-->
+            <td valign="top" style="padding-left: 15px;">
+                <table style="width: 100%">
+                    <tr>
+                        <td class="sysbtn_td">
+                            <div style="min-width: 200px">
+                                <div class="sysbtnimg1">
+                                </div>
+                                <div class="sysbtntxt">
+                                    项目OA
+                                </div>
+                                <div class="sysbtnimg2">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="sysbtnGap">
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sysbtn_td">
+                            <div style="min-width: 200px">
+                                <div class="sysbtnimg1">
+                                </div>
+                                <div class="sysbtntxt">
+                                    进度协同
+                                </div>
+                                <div class="sysbtnimg2">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="sysbtnGap">
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sysbtn_td">
+                            <div style="min-width: 200px">
+                                <div class="sysbtnimg1">
+                                </div>
+                                <div class="sysbtntxt">
+                                    安全管理
+                                </div>
+                                <div class="sysbtnimg2">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="sysbtnGap">
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sysbtn_td">
+                            <div style="min-width: 200px">
+                                <div class="sysbtnimg1">
+                                </div>
+                                <div class="sysbtntxt">
+                                    质量管理
+                                </div>
+                                <div class="sysbtnimg2">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="sysbtnGap">
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sysbtn_td">
+                            <div style="min-width: 200px">
+                                <div class="sysbtnimg1">
+                                </div>
+                                <div class="sysbtntxt">
+                                    工艺工法
+                                </div>
+                                <div class="sysbtnimg2">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="sysbtnGap">
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sysbtn_td">
+                            <div style="min-width: 200px">
+                                <div class="sysbtnimg1">
+                                </div>
+                                <div class="sysbtntxt">
+                                    企业管理
+                                </div>
+                                <div class="sysbtnimg2">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="sysbtnGap">
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sysbtn_td">
+                            <div style="min-width: 200px">
+                                <div class="sysbtnimg1">
+                                </div>
+                                <div class="sysbtntxt">
+                                    进度协同(新)
+                                </div>
+                                <div class="sysbtnimg2">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="sysbtnGap">
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sysbtn_td">
+                            <div style="min-width: 200px">
+                                <div class="sysbtnimg1">
+                                </div>
+                                <div class="sysbtntxt">
+                                    工艺工法(新)
+                                </div>
+                                <div class="sysbtnimg2">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="sysbtnGap">
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sysbtn_td">
+                            <div style="min-width: 200px">
+                                <div class="sysbtnimg1">
+                                </div>
+                                <div class="sysbtntxt">
+                                    系统设置
+                                </div>
+                                <div class="sysbtnimg2">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <!--系统连接结束-->
+            <td style="background-color: #e0e7f1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <!--分页控件-->
+            <td style="height: 40px; background-color: #ffffff">
+                <div id="page" style="width: 400px; margin: 0 auto">
+
+                </div>
+            </td>
+            <td>
+            </td>
+            <td style="background-color: #e0e7f1">
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="home_footer">
+    <div class="home_footertext1">
+        法律声明|留言反馈
+    </div>
+    <div class="home_footertext2">
+        京ICP备99999999号 Copyright 1999-2016 版权所有 广联达科技股份有限公司
+    </div>
+</div>
+</body>
+<script th:inline="javascript">
+    var user = [[${userName}]];
+</script>
+</html>

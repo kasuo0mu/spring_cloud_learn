@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>login</title>
+    <link rel="stylesheet" href="../css/login.css"/>
+    <link rel="icon" type="image/x-icon" href="favicon1.ico"/>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+</head>
+<body>
+<div class="layer01">
+    数字建造平台
+</div>
+<div id="login" class="login">
+    <form role="form" th:action="@{/login}" method="post">
+    <div class="layer">
+        账号登录
+    </div>
+    <div>
+        <div class="userimg"></div>
+        <input type="text" class="txt_username" name="username" id="username" placeholder="请输入用户名" />
+    </div>
+    <div>
+        <div class="lockimg"></div>
+        <input type="password" class="txt_password" name="password" id="password" placeholder="请输入密码" />
+    </div>
+    <div class="forget_password"><a href="http://i.mingshi58.com/ForgetPwd.aspx?LoginType=1" target="_blank">忘记密码?</a></div>
+    <div>
+        <div>
+            <input type="captcha" class="vercodetxt" name="captcha"  placeholder="请输入验证码" />
+        </div>
+        <img id="captcha" alt="验证码" src="/getCaptcha" th:src="@{/getCaptcha}" class="vercode"
+             onclick="this.src='/getCaptcha?r='+Math.random()"/>
+    </div>
+    <div class="error_message">
+        <span th:if="${param.error}" th:text="${session.SPRING_SECURITY_LAST_EXCEPTION.message}">验证码错误</span>
+    </div>
+    <div>
+        <button type="submit" class="loginbtn">
+            立即登录
+        </button>
+    </div>
+    </form>
+</div>
+</body>
+</html>
+<script th:inline="javascript">
+    /*<![CDATA[*/
+    /*]]>*/
+</script>

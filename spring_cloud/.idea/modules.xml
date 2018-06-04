@@ -4,8 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../cloud-config-server/cloud-config-server.iml" filepath="$PROJECT_DIR$/../cloud-config-server/cloud-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/../cloud-eureka-server/cloud-eureka-server.iml" filepath="$PROJECT_DIR$/../cloud-eureka-server/cloud-eureka-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../cloud-simple-helloword/cloud-simple-helloword.iml" filepath="$PROJECT_DIR$/../cloud-simple-helloword/cloud-simple-helloword.iml" />
       <module fileurl="file://$PROJECT_DIR$/../cloud-simple-service/cloud-simple-service.iml" filepath="$PROJECT_DIR$/../cloud-simple-service/cloud-simple-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../cloud-simple-ui/cloud-simple-ui.iml" filepath="$PROJECT_DIR$/../cloud-simple-ui/cloud-simple-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../cloud-simple-zuul/cloud-simple-zuul.iml" filepath="$PROJECT_DIR$/../cloud-simple-zuul/cloud-simple-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_cloud.iml" filepath="$PROJECT_DIR$/spring_cloud.iml" />
     </modules>
   </component>

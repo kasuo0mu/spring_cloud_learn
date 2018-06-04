@@ -1,0 +1,162 @@
+body
+{
+    background: url("../images/login-BG.png") no-repeat;
+    margin: 0px;
+    padding: 0px;
+    background-size: 100%;
+    font-family: Microsoft YaHei;
+}
+
+form
+{
+    display: inline;
+}
+
+.login
+{
+    width: 320px;
+    height: 286px;
+    background-color: white;
+    margin: 1% auto; /*margin-left: 39%;     margin-top: 1%;     position: absolute;*/
+}
+.layer
+{
+    width: 69px;
+    height: 16px;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    /*font-family: Microsoft YaHei;*/
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    color: #333333;
+}
+.layer01
+{
+    width: 500px;
+    height: 48px;
+    margin: 14% auto 0 auto;
+    text-align:center;
+    margin-top: 14%;
+    /*font-family: Microsoft YaHei;*/
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 2.3px;
+    color: #ffffff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.userimg
+{
+    margin-left: 20px;
+    margin-top: 18px;
+    width: 45px;
+    height: 26px;
+    position: relative;
+    z-index: 3;
+    background-position: 5px center;
+    background: url("../images/lg-user.png");
+    background-repeat: no-repeat;
+}
+
+.txt_username
+{
+    margin-left: 20px;
+    margin-top: -28px;
+    width: 230px;
+    height: 26px;
+    border-radius: 1px;
+    border: solid 1px #bfcbdb; /*background-image: url('image/lg-user.png');*/
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position: left 1px;
+    padding-left: 55px;
+}
+.lockimg
+{
+    margin-left: 20px;
+    margin-top: 18px;
+    width: 45px;
+    height: 26px;
+    position: relative;
+    z-index: 3;
+    background-position: 5px center;
+    background: url("../images/lg_lock.png");
+    background-repeat: no-repeat;
+}
+
+.txt_password
+{
+    margin-left: 20px;
+    margin-top: -28px;
+    width: 230px;
+    height: 26px;
+    border-radius: 1px;
+    border: solid 1px #bfcbdb;
+    background-image: url('../images/lg_lock.png');
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position: left 1px;
+    padding-left: 55px;
+}
+
+.vercodetxt
+{
+    width: 180px;
+    height: 24px;
+    border-radius: 1px;
+    border: solid 1px #bfcbdb;
+    margin-left: 20px;
+    margin-top: 23px;
+}
+
+.vercode
+{
+    width: 100px;
+    height: 26px;
+    position: relative;
+    margin-top: -28px; /* margin-top: -20px;*/
+    margin-left: 210px;
+}
+
+.loginbtn
+{
+    margin-left: 20px;
+    margin-top: 22px;
+    width: 280px;
+    height: 44px;
+    font-size: 16px;
+    /*font-family: Microsoft YaHei;*/
+    font-weight: 500;
+    border-radius: 2px;
+    color: #ffffff;
+    background-color: #0080cc;
+    border: solid 1px #107bbb;
+}
+
+.forget_password {
+    /*width: 56px;*/
+    height: 12px;
+    /*font-family: Microsoft YaHei;*/
+    padding-right: 5%;
+    float:right;
+    text-align:right;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: #828282;
+}
+
+.error_message {
+    /*width: 109px;*/
+    height: 12px;
+    padding-top: 2%;
+    /*font-family: Microsoft YaHei;*/
+    text-align:center;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: #ff5852;
+}
+

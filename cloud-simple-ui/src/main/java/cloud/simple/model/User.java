@@ -9,12 +9,17 @@ package cloud.simple.model;
 
 public class User {
 
-	private String username;
-	public String getUsername() {
-		return username;
+	private String name;
+
+	private String phone;
+
+	private String address;
+
+	public String getName() {
+		return name;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setName(String name) {
+		this.name = name;
 	}
 }

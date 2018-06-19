@@ -32,11 +32,17 @@ public class UserService {
         //return feignUserService.readUserInfo();
     }
 
+    public List<User> getUserList(int currentPage, int pageSize) {
+        List<User> userList = restTemplate.getForObject("http://" + SERVICE_NAME + "/userList?currentPage=" + currentPage + "&pageSize=" + pageSize, List.class);
+        return userList;
+        //return feignUserService.readUserInfo();
+    }
+
     private List<User> fallbackSearchAll() {
         System.out.println("HystrixCommand fallbackMethod handle!");
         List<User> ls = new ArrayList<User>();
         User user = new User();
-        user.setUsername("TestHystrixCommand");
+        user.setName("TestHystrixCommand");
         ls.add(user);
         return ls;
     }

@@ -6,4 +6,8 @@
   <select id="findAll" resultType="cloud.simple.service.model.User">
     select * from user
   </select>
+  <select id="getUserList" resultType="cloud.simple.service.model.User">
+    select * from user
+    limit #{currentPage},#{pageSize}
+  </select>
 </mapper>

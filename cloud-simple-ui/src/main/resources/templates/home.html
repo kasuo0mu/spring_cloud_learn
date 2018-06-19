@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.w3.org/1999/xhtml" xmlns:min-width="http://www.w3.org/1999/xhtml">
 <head>
-    <title>home</title>
-    <link rel="icon" type="image/x-icon" href="favicon1.ico"/>
+    <title>表格控件</title>
+    <!--<link rel="icon" type="image/x-icon" href="favicon1.ico"/>-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"/>
     <link rel="stylesheet" href="css/home.css"/>
-    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"
-            th:href="@{/js/jquery.js}"></script>
-    <script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"
-            th:href="@{/js/bootstrap.js}"></script>
-    <script type="text/javascript" src="js/home.js" th:href="@{/js/home.js}"></script>
-    <script type="text/javascript" src="js/test.js" th:href="@{/js/test.js}"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js" th:href="@{/js/jquery.js}"></script>
+    <!--<script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js" th:href="@{/js/bootstrap.js}"></script>-->
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="jquery-easyui-1.5.5.2/themes/default/easyui.css"/>
+    <link rel="stylesheet" type="text/css" href="jquery-easyui-1.5.5.2/themes/icon.css"/>
+    <link rel="stylesheet" type="text/css" href="jquery-easyui-1.5.5.2/demo/demo.css"/>
+    <script type="text/javascript" src="jquery-easyui-1.5.5.2/jquery.easyui.min.js"></script>
 </head>
 <body>
 <div class="home_header">
-    <input type="hidden" id="token" th:value="${token}"/>
     <div class="home_headertxt">
-        数字建造平台
-    </div>
-    <div style="padding-top: 22px; padding-left: 75%; width: 300px">
-        <img style="float: left" src="../images/headphoto.png"/>
-        <div class="home_toprighttxt1">
-            欢迎您：<span th:text="${userName}">zhangtz</span>
-        </div>
-        <form th:action="@{/logout}" method="post">
-            <div style="cursor: pointer" id="logout">
-                <img style="float: left; margin-left: 40px" src="../images/exist.png"/>
-                    <span class="home_toprighttxt2">退出</span>
-            </div>
-        </form>
+        表格控件
     </div>
 </div>
 <div class="home_main">
@@ -37,10 +27,10 @@
                 &nbsp;
             </td>
             <td width='65%' style="padding-top: 20px; padding-bottom: 14px; color: #333333; font-weight: bold">
-                我的待办事项
+                demo展示
             </td>
             <td width='15%' style="padding-left: 20px; color: #333333; font-weight: bold">
-                专业系统
+                控件名称
             </td>
             <td width='10%' style="background-color: #e0e7f1">
                 &nbsp;
@@ -51,7 +41,18 @@
             </td>
             <!--代办信息-->
             <td style="height: 500px; background-color: #ffffff" valign="top">
-                <table id="table" style="width: 100%;">
+                <!--<table id="table_data" width="100%">-->
+                <!--<thead>-->
+                <!--<tr>-->
+                    <!--<th>Column 1</th>-->
+                    <!--<th>Column 2</th>-->
+                    <!--<th>Column 3</th>-->
+                <!--</tr>-->
+                <!--</thead>-->
+                <!--<tbody></tbody>-->
+                <!--</table>-->
+
+                <table id="dg">
                 </table>
             </td>
             <!--系统连接开始-->
@@ -60,12 +61,8 @@
                     <tr>
                         <td class="sysbtn_td">
                             <div style="min-width: 200px">
-                                <div class="sysbtnimg1">
-                                </div>
                                 <div class="sysbtntxt">
-                                    项目OA
-                                </div>
-                                <div class="sysbtnimg2">
+                                    <span id="data_tables">DataTables</span>
                                 </div>
                             </div>
                         </td>
@@ -77,152 +74,19 @@
                     <tr>
                         <td class="sysbtn_td">
                             <div style="min-width: 200px">
-                                <div class="sysbtnimg1">
-                                </div>
                                 <div class="sysbtntxt">
-                                    进度协同
-                                </div>
-                                <div class="sysbtnimg2">
+                                    <span id="easyui">easyui</span>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr class="sysbtnGap">
                         <td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="sysbtn_td">
-                            <div style="min-width: 200px">
-                                <div class="sysbtnimg1">
-                                </div>
-                                <div class="sysbtntxt">
-                                    安全管理
-                                </div>
-                                <div class="sysbtnimg2">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="sysbtnGap">
-                        <td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="sysbtn_td">
-                            <div style="min-width: 200px">
-                                <div class="sysbtnimg1">
-                                </div>
-                                <div class="sysbtntxt">
-                                    质量管理
-                                </div>
-                                <div class="sysbtnimg2">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="sysbtnGap">
-                        <td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="sysbtn_td">
-                            <div style="min-width: 200px">
-                                <div class="sysbtnimg1">
-                                </div>
-                                <div class="sysbtntxt">
-                                    工艺工法
-                                </div>
-                                <div class="sysbtnimg2">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="sysbtnGap">
-                        <td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="sysbtn_td">
-                            <div style="min-width: 200px">
-                                <div class="sysbtnimg1">
-                                </div>
-                                <div class="sysbtntxt">
-                                    企业管理
-                                </div>
-                                <div class="sysbtnimg2">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="sysbtnGap">
-                        <td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="sysbtn_td">
-                            <div style="min-width: 200px">
-                                <div class="sysbtnimg1">
-                                </div>
-                                <div class="sysbtntxt">
-                                    进度协同(新)
-                                </div>
-                                <div class="sysbtnimg2">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="sysbtnGap">
-                        <td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="sysbtn_td">
-                            <div style="min-width: 200px">
-                                <div class="sysbtnimg1">
-                                </div>
-                                <div class="sysbtntxt">
-                                    工艺工法(新)
-                                </div>
-                                <div class="sysbtnimg2">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="sysbtnGap">
-                        <td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="sysbtn_td">
-                            <div style="min-width: 200px">
-                                <div class="sysbtnimg1">
-                                </div>
-                                <div class="sysbtntxt">
-                                    系统设置
-                                </div>
-                                <div class="sysbtnimg2">
-                                </div>
-                            </div>
                         </td>
                     </tr>
                 </table>
             </td>
             <!--系统连接结束-->
-            <td style="background-color: #e0e7f1">
-            </td>
-        </tr>
-        <tr>
-            <td>
-            </td>
-            <!--分页控件-->
-            <td style="height: 40px; background-color: #ffffff">
-                <div id="page" style="width: 400px; margin: 0 auto">
-
-                </div>
-            </td>
-            <td>
-            </td>
             <td style="background-color: #e0e7f1">
             </td>
         </tr>
@@ -236,8 +100,8 @@
         京ICP备99999999号 Copyright 1999-2016 版权所有 广联达科技股份有限公司
     </div>
 </div>
+
+<script type="text/javascript" src="js/page/home.js" th:href="@{/js/page/home.js}"></script>
+<!--<script type="text/javascript" src="js/page/test.js" th:href="@{/js/page/test.js}"></script>-->
 </body>
-<script th:inline="javascript">
-    var user = [[${userName}]];
-</script>
 </html>

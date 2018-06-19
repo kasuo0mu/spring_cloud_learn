@@ -10,13 +10,15 @@ package cloud.simple.web;
 import cloud.simple.model.User;
 import cloud.simple.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 @Controller
@@ -28,17 +30,34 @@ public class UserController {
 //	@Autowired
 //	FeignUserService feignUserService;
 
-    @RequestMapping(value = "/users")
-    public ResponseEntity<List<User>> readUserInfo() {
+    @RequestMapping(value = "/dataTables")
+    @ResponseBody
+    public Object readUserInfo() {
         List<User> users = userService.readUserInfo();
-        return new ResponseEntity<List<User>>(users, HttpStatus.OK);
+        Map<String, Object> resultMap = new HashMap<>();
+        resultMap.put("aaData", users);
+        return resultMap;
+//        return new ResponseEntity<List<User>>(users, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/easyUi")
+    @ResponseBody
+    public Object getUserList(HttpServletRequest request) {
+        int currentPage = Integer.parseInt(request.getParameter("page"));
+        // 获取前台每页显示条数
+        int pageSize = Integer.parseInt(request.getParameter("rows"));
+        List<User> users = userService.getUserList(currentPage, pageSize);
+        Map<String, Object> map=new HashMap<String,Object>();
+        int total = userService.readUserInfo().size();
+        map.put("total", total);
+        map.put("rows", users);
+        return map;
+//        return new ResponseEntity<List<User>>(users, HttpStatus.OK);
     }
 
     @RequestMapping(value = "/show")
     public ModelAndView showUserInfo() {
-        List<User> users = userService.readUserInfo();
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("userList", users);
         modelAndView.setViewName("home");
         return modelAndView;
     }
